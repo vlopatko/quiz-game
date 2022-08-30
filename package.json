@@ -2,6 +2,7 @@
   "name": "quiz-game-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ExampleTrue.github.io/quiz-game",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
@@ -19,7 +20,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .jsx,.js src/",
-    "lint-fix": "eslint --ext .jsx,.js src/ --fix"
+    "lint-fix": "eslint --ext .jsx,.js src/ --fix",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
