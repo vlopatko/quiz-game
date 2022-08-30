@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+body {
+  font-family: 'Castoro', serif;
+}
+
+.main {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.window {
+  display:block;
+  margin: auto auto;
+  padding: 15px 20px;
+  max-width: 360px;
+  background: #F9F8F1;
+  border-radius: 20px;
+}
+
+.window .header {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.GameHeaderComponent_header {
+  margin: 0 auto;
+  height: 50px;
+  max-width: 400px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.GameHeaderComponent_span {
+  color: #484644;
+}
+
+.GameHeaderComponent_closeIcon{
+  position: relative;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  margin-left: 5px;
+  background: url('/public/Iconclose.svg') no-repeat center;
+  border: none;
+}
+
+.GameHeaderComponent_logoBackground{
+  display: flex;
+  margin: 30px auto 35px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  background-color: #FEDF3F;
+  border-radius: 8px;
+  left: -10px;
+  position: relative;
+}
+
+.GameHeaderComponent_logoAnimation {
+  height: 34px;
+  width: 34px;
+  animation:spin 2s linear infinite;
+  background: url('/public/Logo.svg') no-repeat center;
+}
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.GameHeaderComponent_logo {
+  height: 34px;
+  width: 34px;
+  background: url('/public/Logo.svg') no-repeat center;
+}
+
+.GameHeaderComponent_description {
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  max-width: 360px;
+  margin:0 auto 15px;
+  text-align: center;
+  color: #484644;
+}
+
+.GameHeaderComponent_preface {
+  font-style: italic;
+  line-height: 25px;
+  font-size: 12px;
+  margin: 0 auto 35px;
+  color: #9F9F9B;
+  max-width: 250px;
+  text-align: center;
+}
+
+.GameHeaderComponent_gameOver {
+  font-family: 'Castoro';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 35px auto 7px;
+  max-width: 360px;
+  text-align: center;
+  color: #696655;
+}
+
+.StartScreen_windowHeaderName {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  color: #696655;
+  font-size: 20px;
+  line-height: 25px;
+  font-style: normal;
+  margin-bottom: 5px;
+}
+
+.StartScreen_gameProperty {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.StartScreen_gamePropertyName {
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 11px;
+  color: #696655;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.StartScreen_button {
+  border-radius: 20px;
+  border: none;
+  height: 26px;
+  padding: 0 15px;
+  margin: 5px 5px 5px 0;
+  font-family: 'Castoro', serif;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.StartScreen_triviaInfo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  font-style: normal;
+  color: #9F9F9B;
+  line-height: 16px;
+}
+
+.StartScreen_triviaInfoLink {
+  color: #3F74FE;
+}
+
+.StartScreen_buttonGo {
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Castoro', serif;
+  margin-top: 15px;
+  background-color: #FEDF3F;
+  color: #696655;
+}
+
+.StartScreen_buttonGo:disabled {
+  padding: 5px 15px;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'Castoro', serif;
+  margin-top: 15px;
+  background-color: #FBEEA9;
+  color: #B0AFA8;
+}
+
+.StartScreen_option {
+  margin: 0 0 15px;
+  max-width: 350px;
+}
+
+.StartScreen_gameInstruction {
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  color: #9F9F9B;
+  font-size: 14px;
+  line-height: 16px;
+  font-style: normal;
+  margin-bottom: 25px;
+}
+
+.GameScreen_headerText {
+  composes: StartScreen_gameInstruction;
+  margin-bottom: 0;
+}
+
+.GameScreen_currentQuestion {
+  width: 100%;
+  max-width: 340px;
+  height: max-content;
+  border-radius: 10px;
+  margin: 10px 0 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #696655;
+}
+
+.GameScreen_variant {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  min-height: 22px;
+  max-width: 360px;
+  border-radius: 22px;
+  border: none;
+  font-size: 14px;
+  font-family: 'Castoro', serif;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(105, 102, 85, 0.1);
+}
+
+.GameScreen_correct{
+  composes: GameScreen_variant;
+  background-color: #30B267;
+  color: #fff;
+}
+
+.GameScreen_incorrect {
+  composes: GameScreen_variant;
+  background-color: #F05050;
+  color: #fff;
+}
+
+.GameScreen_variant,.GameScreen_correct,.GameScreen_incorrect:hover{
+  cursor: pointer;
+}
+
+.GameScreen_livesInfo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  height: 24px;
+  width: 23px;
+  background: white;
+  border-radius: 17px;
+  box-shadow: 0 1px 4px rgba(105, 102, 85, 0.15);
+  padding: 0 10px;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+.GameScreen_liveIcon {
+  width: 10px;
+  height: 12px;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+.ResultScreen_gameOverText {
+  composes: StartScreen_windowHeaderName;
+  font-size: 36px;
+  text-align: center;
+}
+
+.ResultScreen_smile {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.ResultScreen_gameWin {
+  composes: ResultScreen_smile;
+  background-image: url('/public/StarwinLogo.svg');
+}
+
+.ResultScreen_gameLose {
+  composes: ResultScreen_smile;
+  background-image: url('/public/BoredloseLogo.png');
+}
+
+.ResultScreen_panel {
+  display: flex;
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 30px;
+  margin: 30px auto;
+}
+
+.ResultScreen_panelBox {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.ResultScreen_panelBoxLeft {
+  composes: ResultScreen_panelBox;
+  padding-right: 50px;
+  text-align: center;
+}
+
+.ResultScreen_panelBoxRight {
+  composes: ResultScreen_panelBox;
+  padding-left: 50px;
+  text-align: center;
+}
+
+.ResultScreen_shareIcon {
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(105, 102, 85, 0.2), 0 0 2px rgba(105, 102, 85, 0.05);
+  width: 48px;
+  height: 48px;
+  margin: 0 5px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.ResultScreen_shareIcon:hover {
+  scale: 1.1;
+}
+
+.ResultScreen_twitter {
+  composes: ResultScreen_shareIcon;
+  background: url('/public/share/icons8-twitter-circled.svg') center center no-repeat;
+}
+
+.ResultScreen_facebook {
+  composes: ResultScreen_shareIcon;
+  background: url('/public/share/icons8-facebook.svg') center center no-repeat;
+  background-size: 50px 50px;
+}
+
+.ResultScreen_telegram {
+  composes: ResultScreen_shareIcon;
+  background: url('/public/share/icons8-telegram-app.svg') center center no-repeat;
+}
+
+.ResultScreen_gameStat {
+  composes: StartScreen_windowHeaderName;
+  color: #696655;
+  font-size: 24px;
+}
+
+.ResultScreen_sharePanel {
+  margin: 10px auto 5px;
+  max-width: 360px;
+  text-align: center;
+}
+
+.ResultScreen_shareResults {
+  font-family: 'Castoro';
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #696655;
+  text-align: center;
+  margin: 25px auto 5px;
+}
+
+.ResultScreen_gameInfo {
+  font-family: 'Castoro';
+  font-size: 14px;
+  font-weight: 400;
+  color: #696655;
+  text-align: center;
+}
+
+.HistoryComponent_info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 17px;
+  box-shadow: 0 1px 4px rgba(105, 102, 85, 0.15);
+  width: 100%;
+  padding: 4px 5px;
+}
+
+.HistoryComponent_answer-grey {
+  height: 16px;
+  min-width: 22px;
+  border-radius: 10px;
+  background-color: #F9F8F1;
+  margin: 1px;
+  flex-grow: 1;
+}
+
+.HistoryComponent_answer-green {
+  border: solid 2px #30B267;
+  height: 12px;
+  min-width: 18px;
+  border-radius: 10px;
+  background: url(/public/SuccessIcon.svg) no-repeat center #D1EAD6;
+  margin: 1px;
+  flex-grow: 1;
+}
+
+.HistoryComponent_answer-red {
+  border: solid 2px #F05050;
+  height: 12px;
+  min-width: 18px;
+  border-radius: 10px;
+  background: url(/public/FailIcon.svg) no-repeat center #F9E7E0;
+  margin: 1px;
+  flex-grow: 1;
+}
+
+.HistoryComponent_answer-current {
+  border: solid 2px #B4B09F;
+  height: 12px;
+  min-width: 18px;
+  border-radius: 10px;
+  background-color: #F9F8F1;
+  margin: 1px;
+  flex-grow: 1;
+}
