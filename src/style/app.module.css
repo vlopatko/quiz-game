@@ -310,7 +310,7 @@ body {
   position: relative;
   background: #fff;
   border-radius: 10px;
-  padding: 10px 30px;
+  padding: 10px 10px;
   margin: 30px auto;
 }
 
@@ -321,14 +321,12 @@ body {
 
 .ResultScreen_panelBoxLeft {
   composes: ResultScreen_panelBox;
-  padding-right: 50px;
-  text-align: center;
+  text-align: left;
 }
 
 .ResultScreen_panelBoxRight {
   composes: ResultScreen_panelBox;
-  padding-left: 50px;
-  text-align: center;
+  text-align: right;
 }
 
 .ResultScreen_shareIcon {
@@ -419,7 +417,8 @@ body {
   height: 12px;
   min-width: 18px;
   border-radius: 10px;
-  background: url(/public/SuccessIcon.svg) no-repeat center #D1EAD6;
+  background: url(/public/SuccessIcon.svg) no-repeat center;
+  background-color: #D1EAD6;
   margin: 1px;
   flex-grow: 1;
 }
@@ -429,7 +428,8 @@ body {
   height: 12px;
   min-width: 18px;
   border-radius: 10px;
-  background: url(/public/FailIcon.svg) no-repeat center #F9E7E0;
+  background: url(/public/FailIcon.svg) no-repeat center;
+  background-color: #F9E7E0;
   margin: 1px;
   flex-grow: 1;
 }
