@@ -25,11 +25,7 @@ function GameScreen({
     <div>
       <div className={styles.header}>
         <div className={styles.GameScreen_livesInfo}>
-          <img
-            src="/Heartheart.svg"
-            className={styles.GameScreen_liveIcon}
-            alt="heart icon"
-          />
+          <div className={styles.GameScreen_liveIcon} />
           {lives}
         </div>
         <HistoryComponent game={game} />
