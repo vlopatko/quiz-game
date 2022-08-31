@@ -31,15 +31,15 @@ function ResultScreen({
       <div className={styles.ResultScreen_panel}>
         <div className={styles.ResultScreen_panelBoxLeft}>
           <div
-            className={styles.ResultScreen_gameStat}
+            className={styles.ResultScreen_gameStatLeft}
           >
             {timeOfPlay()}
           </div>
-          <div className={styles.GameScreen_headerText}>Time</div>
+          <div className={styles.ResultScreen_gameStatText}>Time</div>
         </div>
         <div className={styles.ResultScreen_panelBoxRight}>
-          <div className={styles.ResultScreen_gameStat}>{game.lives}</div>
-          <div className={styles.GameScreen_headerText}>Lives</div>
+          <div className={styles.ResultScreen_gameStatRight}>{game.lives}</div>
+          <div className={styles.ResultScreen_gameStatText}>Lives</div>
         </div>
         <div className={game.lives > 0
           ? styles.ResultScreen_gameWin

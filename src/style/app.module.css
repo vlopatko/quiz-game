@@ -283,6 +283,25 @@ body {
   text-align: center;
 }
 
+.ResultScreen_gameStatRight {
+  composes: StartScreen_windowHeaderName;
+  color: #696655;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.ResultScreen_gameStatLeft {
+  composes: StartScreen_windowHeaderName;
+  color: #696655;
+  font-size: 20px;
+  padding: 0;
+}
+
+.ResultScreen_gameStatText{
+  composes: GameScreen_headerText;
+  padding: 0 10px;
+}
+
 .ResultScreen_smile {
   position: absolute;
   left: 50%;
@@ -298,11 +317,15 @@ body {
 .ResultScreen_gameWin {
   composes: ResultScreen_smile;
   background-image: url('/public/StarwinLogo.svg');
+  width: 85px;
+  height: 85px;
 }
 
 .ResultScreen_gameLose {
   composes: ResultScreen_smile;
   background-image: url('/public/BoredloseLogo.png');
+  width: 85px;
+  height: 85px;
 }
 
 .ResultScreen_panel {
@@ -357,12 +380,6 @@ body {
 .ResultScreen_telegram {
   composes: ResultScreen_shareIcon;
   background: url('/public/share/icons8-telegram-app.svg') center center no-repeat;
-}
-
-.ResultScreen_gameStat {
-  composes: StartScreen_windowHeaderName;
-  color: #696655;
-  font-size: 24px;
 }
 
 .ResultScreen_sharePanel {
