@@ -422,7 +422,6 @@ body {
 
 .HistoryComponent_answer-grey {
   height: 16px;
-  min-width: 22px;
   border-radius: 10px;
   background-color: #F9F8F1;
   margin: 1px;
@@ -432,7 +431,6 @@ body {
 .HistoryComponent_answer-green {
   border: solid 2px #30B267;
   height: 12px;
-  min-width: 18px;
   border-radius: 10px;
   background: url(/public/SuccessIcon.svg) no-repeat center;
   background-color: #D1EAD6;
@@ -443,7 +441,6 @@ body {
 .HistoryComponent_answer-red {
   border: solid 2px #F05050;
   height: 12px;
-  min-width: 18px;
   border-radius: 10px;
   background: url(/public/FailIcon.svg) no-repeat center;
   background-color: #F9E7E0;
@@ -454,7 +451,6 @@ body {
 .HistoryComponent_answer-current {
   border: solid 2px #B4B09F;
   height: 12px;
-  min-width: 18px;
   border-radius: 10px;
   background-color: #F9F8F1;
   margin: 1px;
