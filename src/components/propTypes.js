@@ -6,6 +6,7 @@ const propTypes = {
   restartGame: PropTypes.func,
   chooseAnswer: PropTypes.func,
   chooseLevel: PropTypes.func,
+  chooseDifficulty: PropTypes.func,
   chooseCategory: PropTypes.func,
   shareButton: PropTypes.func,
   shuffle: PropTypes.func,
@@ -17,6 +18,10 @@ const propTypes = {
     currentQuestionIndex: PropTypes.number,
     finishedAt: PropTypes.number,
     history: PropTypes.arrayOf(PropTypes.bool),
+    difficulty: PropTypes.shape({
+      id: PropTypes.string,
+      name: PropTypes.string,
+    }),
     level: PropTypes.shape({
       id: PropTypes.string,
       limit: PropTypes.number,

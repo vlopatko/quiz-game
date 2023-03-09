@@ -51,8 +51,12 @@ function ResultScreen({
         {game.categoryName}
       </div>
       <div className={styles.ResultScreen_gameInfo}>
-        Difficulty:&nbsp;
+        Difficulty of game:&nbsp;
         {game.level.name}
+      </div>
+      <div className={styles.ResultScreen_gameInfo}>
+        Difficulty of questions:&nbsp;
+        {game.difficulty.name}
       </div>
       <div className={styles.ResultScreen_shareResults}>Share result</div>
       <div className={styles.ResultScreen_sharePanel}>

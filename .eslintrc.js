@@ -19,5 +19,6 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': 'off',
+    'implicit-arrow-linebreak': 'off',
   },
 };

@@ -29,6 +29,7 @@ const defaultGame = {
   lives: null,
   history: [],
   category: '',
+  difficulty: {},
   level: {},
   startedAt: 0,
   finishedAt: 0,
@@ -117,9 +118,16 @@ function App() {
     });
   };
 
+  const chooseDifficulty = (difficulty) => {
+    setGame({
+      ...game,
+      difficulty,
+    });
+  };
+
   const startGame = async () => {
-    const { category, level } = game;
-    const url = `https://the-trivia-api.com/api/questions?categories=${category}&limit=${level.limit}&difficulty=easy`;
+    const { category, level, difficulty } = game;
+    const url = `https://the-trivia-api.com/api/questions?categories=${category}&limit=${level.limit}&difficulty=${difficulty.id}`;
     const request = await fetch(url);
 
     setQuestionsLoading(true);
@@ -226,6 +234,7 @@ function App() {
           categoryStyles={categoryStyles}
           chooseCategory={chooseCategory}
           chooseLevel={chooseLevel}
+          chooseDifficulty={chooseDifficulty}
           startGame={startGame}
           loading={loading}
           questionsLoading={questionsLoading}

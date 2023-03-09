@@ -404,6 +404,7 @@ body {
   font-weight: 400;
   color: #696655;
   text-align: center;
+  text-transform: none;
 }
 
 .HistoryComponent_info {

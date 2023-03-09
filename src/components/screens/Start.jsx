@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import CategoriesComponent from '../Categories';
 import LevelsComponent from '../Levels';
+import DifficultiesComponent from '../Difficulty';
 import PropTypes from '../propTypes';
 
 import styles from '../../style/app.module.css';
@@ -12,6 +13,7 @@ function StartScreen({
   categoryStyles,
   chooseCategory,
   chooseLevel,
+  chooseDifficulty,
   startGame,
   loading,
   questionsLoading,
@@ -70,11 +72,17 @@ function StartScreen({
       </div>
       <div className={styles.StartScreen_option}>
         <div className={styles.StartScreen_gameProperty}>
-          <div className={styles.StartScreen_gamePropertyName}>difficulty</div>
+          <div className={styles.StartScreen_gamePropertyName}>difficulty of game</div>
           <LevelsComponent
             game={game}
             levels={levels}
             chooseLevel={chooseLevel}
+          />
+          <div className={styles.StartScreen_gamePropertyName}>difficulty of questions</div>
+          <DifficultiesComponent
+            game={game}
+            levels={levels}
+            chooseDifficulty={chooseDifficulty}
           />
         </div>
       </div>
@@ -93,7 +101,9 @@ function StartScreen({
       <button
         type="button"
         className={styles.StartScreen_buttonGo}
-        disabled={!(game.category.length && Object.keys(game.level).length)}
+        disabled={!(game.category.length
+          && Object.keys(game.level).length
+          && Object.keys(game.difficulty).length)}
         onClick={startGame}
       >
         {questionsLoading ? 'Loading...' : 'Play quiz!'}
