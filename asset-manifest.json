@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/quiz-game/static/css/main.c12be68e.css",
-    "main.js": "/quiz-game/static/js/main.024cbbc8.js",
+    "main.css": "/quiz-game/static/css/main.4f155868.css",
+    "main.js": "/quiz-game/static/js/main.3ebe22af.js",
     "static/media/BoredloseLogo.png": "/quiz-game/static/media/BoredloseLogo.2d9fd8d8641b1b168807.png",
     "static/media/StarwinLogo.svg": "/quiz-game/static/media/StarwinLogo.e5f08b49c7e2d228bbcd.svg",
     "static/media/Logo.svg": "/quiz-game/static/media/Logo.4a17cc98548e380f98e1.svg",
@@ -13,11 +13,11 @@
     "static/media/Iconclose.svg": "/quiz-game/static/media/Iconclose.68e64d79e175ed175d98.svg",
     "static/media/FailIcon.svg": "/quiz-game/static/media/FailIcon.27b7ac53960e4a6044af.svg",
     "static/media/SuccessIcon.svg": "/quiz-game/static/media/SuccessIcon.d3e63b00997d40806810.svg",
-    "main.c12be68e.css.map": "/quiz-game/static/css/main.c12be68e.css.map",
-    "main.024cbbc8.js.map": "/quiz-game/static/js/main.024cbbc8.js.map"
+    "main.4f155868.css.map": "/quiz-game/static/css/main.4f155868.css.map",
+    "main.3ebe22af.js.map": "/quiz-game/static/js/main.3ebe22af.js.map"
   },
   "entrypoints": [
-    "static/css/main.c12be68e.css",
-    "static/js/main.024cbbc8.js"
+    "static/css/main.4f155868.css",
+    "static/js/main.3ebe22af.js"
   ]
 }
